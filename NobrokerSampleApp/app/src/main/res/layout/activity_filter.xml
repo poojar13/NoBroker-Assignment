@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@color/activityBackground"
+    tools:context="com.example.pooja.nobrokersampleapp.View.Activities.FilterActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter By"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textColor="#ffffff"
+            />
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appartment Type"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        />
+    <LinearLayout
+        android:id="@+id/appartmentTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/bhk1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 BHK"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"/>
+        <Button
+            android:id="@+id/bhk2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 BHK"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"/>
+        <Button
+            android:id="@+id/bhk3Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 BHK"
+            android:textSize="14sp"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Building Type"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/buildingTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="2"
+        >
+
+        <Button
+            android:id="@+id/appartmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appartment"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/independentHouseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Independent House/villa"
+            android:textSize="14sp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/independentFloorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Independent Floor/Builder Floor"
+            android:textSize="14sp"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Furnishing Type"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/furnishingTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_margin="5dp">
+        <Button
+            android:id="@+id/fullyFurnishedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semi Furnished"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+        <Button
+            android:id="@+id/semiFurnishedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fully Furnished"
+            android:textSize="14sp"
+            android:background="@android:color/white"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveFilterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:layout_gravity="http://schemas.android.com/apk/res-auto"
+    android:background="@color/activityBackground"
+    tools:context="com.example.pooja.nobrokersampleapp.View.Activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="?attr/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="#ffffff"
+        android:layout_alignParentTop="true"
+        >
+
+        <TextView
+            android:id="@+id/toolbarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Properties near you"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:textColor="#ffffff"
+            />
+
+        <ImageView
+            android:id="@+id/filterImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="8dp"
+            android:background="@mipmap/filter_icon"
+            android:layout_centerHorizontal="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"/>
+
+</RelativeLayout>
