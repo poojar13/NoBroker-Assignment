@@ -156,7 +156,7 @@
         android:layout_weight="1"
         android:layout_margin="5dp">
         <Button
-            android:id="@+id/fullyFurnishedButton"
+            android:id="@+id/semiFurnishedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Semi Furnished"
@@ -165,7 +165,7 @@
             android:background="@android:color/white"
             android:padding="8dp"/>
         <Button
-            android:id="@+id/semiFurnishedButton"
+            android:id="@+id/fullyFurnishedButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Fully Furnished"

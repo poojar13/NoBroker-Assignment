@@ -210,7 +210,7 @@ public class FilterActivity extends AppCompatActivity implements View.OnClickLis
             furnishingType2=null;
         }
         if(semifurnishedcheck==0){
-            furnishingType1="SEMI_FURNISED";
+            furnishingType1="SEMI_FURNISHED";
         }else {
             furnishingType1=null;
         }
